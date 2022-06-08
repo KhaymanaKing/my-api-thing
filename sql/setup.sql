@@ -6,11 +6,11 @@ CREATE table bears (
     name VARCHAR,
     type VARCHAR,
     color VARCHAR,
-    willEatFace BOOLEAN,
-    coolFactor BIGINT
+    will_eat_face BOOLEAN,
+    cool_factor BIGINT
 );
 
-INSERT INTO bears (name, type, color, willEatFace, coolFactor) VALUES 
+INSERT INTO bears (name, type, color, will_eat_face, cool_factor) VALUES 
 (
     'Pooh Bear',
     'Cartoon',

@@ -20,8 +20,15 @@ describe('bears routes', () => {
 
   it('/bears/:id should return bear details', async() => {
     const res = await request(app).get('/bears/1');
-    const bear = await Bear.getById(1);
-    expect(res.body).toEqual(bear);
+    console.log('res.body', res.body);
+    expect(res.body).toEqual({
+      'color': 'Yellow',
+      'id': '1',
+      'name': 'Pooh Bear',
+      'type': 'Cartoon',
+      'will_eat_face': false,
+      'cool_factor': '6'
+    });
   });
   afterAll(() => {
     pool.end();
