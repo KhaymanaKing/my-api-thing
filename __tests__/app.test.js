@@ -20,7 +20,6 @@ describe('bears routes', () => {
 
   it('/bears/:id should return bear details', async() => {
     const res = await request(app).get('/bears/1');
-    console.log('res.body', res.body);
     expect(res.body).toEqual({
       'color': 'Yellow',
       'id': '1',
