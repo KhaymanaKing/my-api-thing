@@ -13,7 +13,7 @@ CREATE table bears (
 INSERT INTO bears (name, type, color, will_eat_face, cool_factor) VALUES 
 (
     'Pooh Bear',
-    'Cartoon',
+    'Cartoon Bear',
     'Yellow',
     'false',
     '6'
